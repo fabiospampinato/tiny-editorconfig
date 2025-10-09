@@ -23,8 +23,8 @@
     "resolver"
   ],
   "dependencies": {
-    "ini-simple-parser": "^1.0.0",
-    "zeptomatch": "^1.1.3"
+    "ini-simple-parser": "^1.0.1",
+    "zeptomatch": "^2.0.2"
   },
   "devDependencies": {
     "benchloop": "^2.1.1",
