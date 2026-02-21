@@ -25,12 +25,12 @@
   ],
   "dependencies": {
     "ini-simple-parser": "^1.0.1",
-    "zeptomatch": "^2.0.2"
+    "zeptomatch": "^2.1.0"
   },
   "devDependencies": {
     "benchloop": "^2.1.1",
-    "fava": "^0.3.1",
-    "tsex": "^3.0.1",
-    "typescript": "^5.2.2"
+    "fava": "^0.3.5",
+    "tsex": "^4.0.2",
+    "typescript": "^5.9.3"
   }
 }
