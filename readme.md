@@ -5,7 +5,7 @@ A tiny isomorphic parser and resolver for [EditorConfig](https://editorconfig.or
 ## Install
 
 ```sh
-npm install --save tiny-editorconfig
+npm install tiny-editorconfig
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ const INPUT1 = `
   trim_trailing_whitespace = false
 `;
 
-const parsed1 = EditorConfig.parse ( INPUT );
+const parsed1 = EditorConfig.parse ( INPUT1 );
 // {
 //   root: true,
 //   overrides: {
@@ -54,7 +54,7 @@ const INPUT2 = `
   indent_size = 4
 `;
 
-const parsed2 = EditorConfig.parse ( INPUT );
+const parsed2 = EditorConfig.parse ( INPUT2 );
 // {
 //   overrides: {
 //     '*': {
