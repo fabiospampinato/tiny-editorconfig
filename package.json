@@ -2,6 +2,7 @@
   "name": "tiny-editorconfig",
   "repository": "github:fabiospampinato/tiny-editorconfig",
   "description": "A tiny isomorphic parser and resolver for EditorConfig.",
+  "license": "MIT",
   "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
