@@ -23,6 +23,10 @@ const resolve = ( configs: ConfigWithOverrides[], filePath: string ): Config => 
 
     for ( const override in overrides ) {
 
+      const config = overrides[override];
+
+      if ( !config ) continue;
+
       const glob = `**/${override}`;
 
       if ( override !== '*' && !zeptomatch ( glob, filePath ) ) continue;

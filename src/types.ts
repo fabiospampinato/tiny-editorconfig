@@ -13,7 +13,7 @@ type Config = {
 };
 
 type ConfigWithOverrides = Config & {
-  overrides?: Record<string, Config>
+  overrides?: Partial<Record<string, Config>>
 };
 
 /* EXPORT */
