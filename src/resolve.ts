@@ -5,6 +5,10 @@ import zeptomatch from 'zeptomatch';
 import extend from './extend';
 import type {Config, ConfigWithOverrides} from './types';
 
+/* HELPERS */
+
+const GLOBS_MATCH_ALL = new Set ([ '*', '**', '**/*' ]);
+
 /* MAIN */
 
 // The provided configs are ordered from lowest to highest priority
@@ -29,9 +33,9 @@ const resolve = ( configs: ConfigWithOverrides[], filePath: string ): Config => 
 
       const glob = `**/${override}`;
 
-      if ( override !== '*' && !zeptomatch ( glob, filePath ) ) continue;
+      if ( !GLOBS_MATCH_ALL.has ( override ) && !zeptomatch ( glob, filePath ) ) continue;
 
-      extend ( resolved, overrides[override] );
+      extend ( resolved, config );
 
     }
 
